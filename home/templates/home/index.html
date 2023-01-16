@@ -1,24 +1,34 @@
 {% extends "base.html" %}
 {% load static %}
-
+ 
 {% block page_header %}
-    <div class="w3-container header-container">
+    <div class="container header-container">
         <div class="row">
-            <div class="column"></div>
+            <div class="col"></div>
         </div>
     </div>
 {% endblock %}
-
+ 
 {% block content %}
-
-<div class="container">
-    <div class="row">
-        <div class="column">
-            <img class="logo" src="media/logo.jpg" alt="logo">
-
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-7 col-md-6 my-auto">
+        <img class="logo" src="logo.jpg" alt="logo">
         </div>
-
+        <div class="row h-100">
+            <div class="col-7 col-md-6">
+                <img class="flag" src="flag.png" alt="flag">
+            </div>
+            <div class="col-7 col-md-6 text-black">
+        <p class="about">We're a small business based in South Wales with big dreams. Our passion for creating customised gifts,means that we provide
+            our customers with nothing but the highest quality of products, which meet their
+            needs and keep them satisfied! We are sisters from the Welsh valleys with a passion for craft and to be the creative minds that bring a
+            smile to your face.</p>
+   </div>
+   </div>
     </div>
 
-</div>
+
 {% endblock %}
+
+
