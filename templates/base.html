@@ -37,7 +37,8 @@
 
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
+      <!-- Nav Bar -->
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex sister">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
@@ -45,6 +46,7 @@
                     <h2 class="logo-font text-black my-0"><strong>Sister Resin Crafts</strong></h2>
                 </a>
             </div>
+            <!-- Search bar -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="">
                     <div class="input-group w-100">
@@ -59,21 +61,22 @@
                     </div>
                 </form>
             </div>
+            <!-- Grid container -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
-                                <p class="my-0">My Account</p>
+                                <p class="my-0">Account</p>
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                                    <a href="" class="dropdown-item">Product Management</a>
+                                    <a href="" class="dropdown-item">My account</a>
                                 {% endif %}
-                                <a href="" class="dropdown-item">My Profile</a>
+                                <a href="" class="dropdown-item">Account</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
                                 <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
@@ -110,10 +113,28 @@
     {% block content %}
     {% endblock %}
 
+    
+
     {% block postloadjs %}
     {% endblock %}
 
-    
+   
+    <footer class="mt-auto">
+        <p>Social Links:</p>
+        <a href="https://www.facebook.com/pg/sisterresincrafts" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+
+        <a href="https://www.etsy.com/uk/market/resin_sister_gift" target="_blank">
+            <i class="fab fa-etsy"></i>
+        </a>
+
+        <a href="https://www.instagram.com/sisters_resincraftsph/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </footer>
+
+        
   </body>
 </html>
 
