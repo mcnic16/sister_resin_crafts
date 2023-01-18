@@ -40,7 +40,7 @@
 <body class="d-flex flex-column min-vh-100">
       <!-- Nav Bar -->
     <header class="container-fluid fixed-top">
-        <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex sister">
+        <div id="topnav" class="row bg-white pt-lg-2 d-lg-flex sister">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="logo-font text-black my-0"><strong>Sister Resin Crafts</strong></h2>
@@ -61,9 +61,9 @@
                     </div>
                 </form>
             </div>
-            <!-- Grid container -->
+            <!-- Account Dropdown menu -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                <ul class="d-none d-lg-inline-block list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
@@ -84,6 +84,7 @@
                             {% endif %}
                         </div>
                     </li>
+                    <!-- Shopping Bag -->
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
                             <div class="text-center">
@@ -99,6 +100,15 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="row mx-auto">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    {% include 'includes/mobile-top-header.html' %}
+                    {% include 'includes/main-nav.html' %}
+                </nav>
             </div>
         </div>
     </header>
@@ -118,7 +128,7 @@
     {% block postloadjs %}
     {% endblock %}
 
-   
+   <!-- footer -->
     <footer class="mt-auto">
         <p>Social Links:</p>
         <a href="https://www.facebook.com/pg/sisterresincrafts" target="_blank">
