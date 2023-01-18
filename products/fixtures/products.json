@@ -1,0 +1,423 @@
+[{
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+        "name": "Autumnal Orange Gold Crystal Trinket Tray",
+        "description": "Trinket Tray",
+        "price": 14.00,
+        "category": 2,
+        "image": "autumnalorangegoldcrystaltrinkettray.jpg"
+    }
+}, {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+        "name": "Transparent Xmas Bauball",
+        "description": "Customised xmas bauball",
+        "price": 14.00,
+        "category": 3,
+        "image": "baubles_group.jpg"
+    }
+}, {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+        "name": "Bumble Bee Coasters",
+        "description": "Set of 2 or 4 bee honeycomb coasters available for personalisation with a name or phrase such as “Bee Kind” - anything you want! £6 each or £20 for a set of 4",
+        "price": 6.00,
+        "category": 1,
+        "image": "beehive.jpg"
+    }
+}, {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+        "name": "Beetlejuice Coasters",
+        "description": "Resin Beetlejuice coaster set with anti slip rubber domes underneath. Other designs available, please message us for more details. £6 each or £20 for a set of 4.",
+        "price": 6.00,
+        "category": 1,
+        "image": "beetlejuice.jpg"
+    }
+}, {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+        "name": "Blue Glitter Coasters",
+        "description": "Resin Blue Glitter Coasters coaster set. £6 each or £20 for a set of 4.",
+        "price": 6.00,
+        "category": 1,
+        "image": "blueglittercoasters.jpg"
+    }
+}, {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+        "name": "Buffy The Vampire Slayer Trinket Tray",
+        "description": "Buffy trinket tray with quote “If the Apocalypse Comes, Beep Me” with blue background and black rim. Available in any colour, just pop us a message.",
+        "price": 14.00,
+        "category": 2,
+        "image": "buffy.jpg"
+    }
+}, {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+        "name": "Dirty Dancing Trinket Tray",
+        "description": "Beautifully simple Dirty Dancing inspired trinket tray - perfect for your keys, jewellery, glasses etc.",
+        "price": 14.00,
+        "category": 2,
+        "image": "dirtydancing.jpg"
+    }
+}, {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+        "name": "Flower and gold leaf coasters",
+        "description": "Simple but pretty flower coasters, can go with any decor. £17.00 for all 4.",
+        "price": 6.00,
+        "category": 1,
+        "image": "flowercoasters.jpg"
+    }
+}, {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+        "name": "Freddie Xmas Coaster",
+        "description": "Freddie Xmas Coaster.",
+        "price": 6.00,
+        "category": 3,
+        "image": "freddyxmas.jpg"
+    }
+}, {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+        "name": "Ghostbusters Coasters",
+        "description": "Ghostbusters resin coaster set with anti slip rubber domes underneath. £6 each or £20 for a set of 4..",
+        "price": 6.00,
+        "category": 1,
+        "image": "ghostbusters.jpg"
+    }
+}, {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+        "name": "glittergeodecoaster",
+        "description": "glittergeodecoaster",
+        "price": 6.00,
+        "category": 1,
+        "image": "glittergeodecoaster.jpg"
+    }
+}, {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+        "name": "Gold Leaf and Clear Phonestand",
+        "description": "Gold Leaf and Clear Phonestand",
+        "price": 6.00,
+        "category": 2,
+        "image": "goldleafandclearphonestand.jpg"
+    }
+}, {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+        "name": "Hocus Pocus Glitter Coasters",
+        "description": "Brightly coloured Hocus Pocus coasters with catchphrase on each coaster. £6 each or £20 for a set of 4.",
+        "price": 6.00,
+        "category": 1,
+        "image": "hocuspocus.jpg"
+    }
+}, {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+        "name": "Jason Xmas Coaster",
+        "description": "Jason",
+        "price": 6.00,
+        "category": 3,
+        "image": "jasonxmas.jpg"
+    }
+}, {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+        "name": "Johnny Depp Coaster",
+        "description": "johnny",
+        "price": 6.00,
+        "category": 1,
+        "image": "johnny_depp_coasters.jpg"
+    }
+}, {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+        "name": "Night Mare before Xmas bauballs",
+        "description": "Nightmare before Xmas",
+        "price": 6.00,
+        "category": 3,
+        "image": "nightbeforexmas.jpg"
+    }
+}, {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+        "name": "orangeandgoldautumnalfloralphonestand.",
+        "description": "Orangeandgoldautumnalfloralphonestand.",
+        "price": 6.00,
+        "category": 2,
+        "image": "orangeandgoldautumnalfloralphonestand.jpg"
+    }
+}, {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+        "name": "orangeandgoldglitter.",
+        "description": "orangeandgoldglitter.",
+        "price": 6.00,
+        "category": 2,
+        "image": "orangeandgoldglitter.jpg"
+    }
+}, {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+        "name": "IT Pennywise Trinket Tray.",
+        "description": "It Pennywise Trinket Tray with 'You Float My Boat'and hearts with blood spatter.",
+        "price": 15.00,
+        "category": 2,
+        "image": "pennywise.jpg"
+    }
+}, {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+        "name": "Pretty Little Liars Coasters.",
+        "description": "Pretty Little Liars resin coaster set with anti slip rubber domes underneath. Other designs available, please message us for more details. £6 each or £20 for a set of 4.",
+        "price": 6.00,
+        "category": 1,
+        "image": "prettylittleliars.jpg"
+    }
+}, {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+        "name": "Rune Coasters",
+        "description": "Beautiful rune coasters with a galaxy like purple and blue background effect. £25 for a set of 4.",
+        "price": 6.00,
+        "category": 1,
+        "image": "runecoasters.jpg"
+    }
+}, {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+        "name": "Scream Xmas Coaster",
+        "description": "Scream.",
+        "price": 6.00,
+        "category": 3,
+        "image": "screamxmas.jpg"
+    }
+}, {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+        "name": "Mike Myers Xmas Coaster",
+        "description": "Halloween",
+        "price": 6.00,
+        "category": 3,
+        "image": "mike.jpg"
+    }
+}, {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+        "name": "Skull and Snake Trinket Tray",
+        "description": "Skull and Snake Trinket Tray",
+        "price": 14.00,
+        "category": 2,
+        "image": "skullandsnake.jpg"
+    }
+}, {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+        "name": "Horror/Slasher Coasters",
+        "description": "Slasher horror coasters. £6 each or £20 for a set of 4.",
+        "price": 6.00,
+        "category": 1,
+        "image": "slasher_coasters.jpg"
+    }
+}, {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+        "name": "Scream Blood Spatter Coasters",
+        "description": "Scream quotes coasters in black with white writing and blood spatter. Perfect gift for Scream fans!£6 each or £20 for a set of 4.",
+        "price": 6.00,
+        "category": 1,
+        "image": "slashersayings.jpg"
+    }
+}, {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+        "name": "Tea Light Holder",
+        "description": "Tea Light Holder.",
+        "price": 6.00,
+        "category": 2,
+        "image": "tealightholder.jpg"
+    }
+}, {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+        "name": "Teal and Gold Leaf Coasters",
+        "description": "Teal and Gold Leaf Coasters.",
+        "price": 14.00,
+        "category": 1,
+        "image": "tealandgold.jpg"
+    }
+}, {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+        "name": "Wine Glass Holder",
+        "description": "Wine Glass Holder",
+        "price": 6.00,
+        "category": 2,
+        "image": "wineglassholder.jpg"
+    }
+}, {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+        "name": "Freddie Krueger Christmas Card",
+        "description": "Freddie Krueger",
+        "price": 6.00,
+        "category": 3,
+        "image": "freddie_christmas_card.jpg"
+    }
+}, {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+        "name": "Ghostface(Scream) Christmas Card",
+        "description": "Ghostface",
+        "price": 6.00,
+        "category": 3,
+        "image": "ghostface_christmas_card.jpg"
+    }
+}, {
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+        "name": "Gold Leaf Phone Holder",
+        "description": "Gold Leaf Phone Holder",
+        "price": 6.00,
+        "category": 2,
+        "image": "gold_leaf_phone_holder.jpg"
+    }
+}, {
+    "pk": 33,
+    "model": "products.product",
+    "fields": {
+        "name": "Hocus Pocus Baubles",
+        "description": "Hocus Pocus Baubles",
+        "price": 6.00,
+        "category": 2,
+        "image": "hocus_pocus_baubles.jpg"
+    }
+}, {
+    "pk": 34,
+    "model": "products.product",
+    "fields": {
+        "name": "Hocus Pocus Sanderson Sisters Bauble",
+        "description": "Hocus Pocus Sanderson Sisters Bauble",
+        "price": 6.00,
+        "category": 3,
+        "image": "hocus_pocus_sanderson_sisters_bauble.jpg"
+    }
+}, {
+    "pk": 35,
+    "model": "products.product",
+    "fields": {
+        "name": "Jason Vorhees Xmas Card",
+        "description": "Jason Vorhees Xmas Card",
+        "price": 6.00,
+        "category": 3,
+        "image": "jason_christmas_card.jpg"
+    }
+}, {
+    "pk": 36,
+    "model": "products.product",
+    "fields": {
+        "name": "Make up Brush Holder",
+        "description": "Jason Vorhees Xmas Card",
+        "price": 6.00,
+        "category": 2,
+        "image": "make_up_brush_holder.jpg"
+    }
+}, {
+    "pk": 37,
+    "model": "products.product",
+    "fields": {
+        "name": "Michael Myers Xmas Bauble",
+        "description": "Michael Myers Xmas Bauble",
+        "price": 6.00,
+        "category": 3,
+        "image": "michael_myers_bauble.jpg"
+    }
+}, {
+    "pk": 38,
+    "model": "products.product",
+    "fields": {
+        "name": "mr_mrs_led_sign",
+        "description": "mr_mrs_led_sign",
+        "price": 6.00,
+        "category": 2,
+        "image": "mr_mrs_led_sign.jpg"
+    }
+}, {
+    "pk": 39,
+    "model": "products.product",
+    "fields": {
+        "name": "mrs_doubtfire_coasters",
+        "description": "mrs_doubtfire_coasters",
+        "price": 6.00,
+        "category": 1,
+        "image": "mrs_doubtfire_coasters.jpeg"
+    }
+}, {
+    "pk": 40,
+    "model": "products.product",
+    "fields": {
+        "name": "spookmas_baubles",
+        "description": "spookmas_baubles",
+        "price": 6.00,
+        "category": 3,
+        "image": "spookmas_baubles.jpg"
+    }
+}, {
+    "pk": 40,
+    "model": "products.product",
+    "fields": {
+        "name": "the_craft_coasters",
+        "description": "the_craft_coasters",
+        "price": 6.00,
+        "category": 3,
+        "image": "the_craft_coasters.jpg"
+    }
+    }, {
+        "pk": 40,
+        "model": "products.product",
+        "fields": {
+            "name": "warning_coasters",
+            "description": "warning_coasters",
+            "price": 6.00,
+            "category": 1,
+            "image": "warning_coasters.jpg"
+        }
+    }
+    
+]
