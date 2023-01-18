@@ -58,6 +58,11 @@ body {
 .border-black {
     border: 1px solid black;
 }
+/* product picture size */
+.picsize {
+    height: 200px;
+    width: 200px;
+}
 
 footer {
     clear: both;
