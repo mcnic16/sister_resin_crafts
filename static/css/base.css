@@ -95,6 +95,17 @@ footer a {
       }
   
       .header-container {
-          padding-top: 164px;
+          padding-top: 104px;
       }
   }
+
+  /* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 250px;
+    }
+
+    body {
+        height: 100%;
+    }
+}
