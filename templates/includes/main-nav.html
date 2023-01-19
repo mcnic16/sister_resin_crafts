@@ -2,17 +2,17 @@
     <ul class="navbar-nav w-auto mx-auto">
 
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}"  aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=coasters" aria-haspopup="true" aria-expanded="false">
                 Coasters
             </a>
         </li>
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href=""  aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=other_item"  aria-haspopup="true" aria-expanded="false">
                 Other Items
             </a>
         </li>
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black" href="" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'products' %}?category=seasonal" aria-haspopup="true" aria-expanded="false">
                 Seasonal
             </a>
         </li>
