@@ -4,8 +4,11 @@
 
 
 This website is the fully functioning website for SisterResin Crafts. Its is designed to be responsive for mobile and tablet and work on all modern browers.
-The site has 6 pages consisting of a Home page, Other Items, Seasonal, Print on Demand, Reviews and Querys and a Terms and Conditions page.
+The site has 5 pages consisting of a Home page, Other Items, Seasonal, Reviews and Querys and a Terms and Conditions page.
 There is also a Search bar, a registration page and the abiilty to buy items and to become an account holder. 
+This was my 2nd attempt at this project, due to css issues with bootsrap that I couldn't get right I started again, so some of the code on this project has been copied from the previous one.
+The project was named newsisterresincrafts which will show all my previous commits aswell.
+I haven't included a option to sort out the products alphabetically or by price because I don't feel there is enough product on the site to warrant this. When the there is more product then I will include a sort option.
 
 <h2 align="center"><img src="readmefiles/logo.png" width="200"></h2>
 
