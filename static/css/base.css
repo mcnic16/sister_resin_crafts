@@ -65,7 +65,11 @@ body {
     width: 200px;
 }
 
-
+.btn-outline-black {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
 
 footer {
     clear: both;
