@@ -45,10 +45,13 @@ def remove_from_bag(request, item_id):
     """Remove the item from the shopping bag"""
 
     try:
+        basket = None
         bag = request.session.get('bag', {})
-        del bag[item_id]
-        if not bag[item_id]:
-            bag.pop(item_id)
+
+        if basket:
+            del bag[item_id]
+            if not bag[item_id]:
+                bag.pop(item_id)
         else:
             bag.pop(item_id)
 
@@ -56,4 +59,5 @@ def remove_from_bag(request, item_id):
         return HttpResponse(status=200)
 
     except Exception as e:
+        print(e)
         return HttpResponse(status=500)
