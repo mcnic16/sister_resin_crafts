@@ -128,6 +128,10 @@ footer a {
       .header-container-products {
         padding-top: 44px;
       }
+
+      .header-containerbag {
+        padding-top: 120px;
+      }
   }
 
   /* pad the top a bit when navbar is collapsed on mobile */
@@ -141,6 +145,9 @@ footer a {
          padding-top: 250px;
     }
 
+    .bag-width {
+        width: 100%;
+    }
     body {
         height: 100%;
     }
@@ -149,3 +156,6 @@ footer a {
         font-size: 20px;
     }
 }
+    .mob-header {
+        font-size: 10px;
+    }
