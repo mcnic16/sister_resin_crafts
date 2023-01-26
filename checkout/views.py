@@ -8,7 +8,10 @@ from bag.contexts import bag_contents
 
 import stripe
 
+
 def checkout(request):
+    stripe_public_key = settings.STRIPE_PUBLIC_KEY
+    stripe_secret_key = settings.STRIPE_SECRET_KEY
     bag = request.session.get('bag', {})
     if not bag:
         messages.error(request, "Your bag is empty")
@@ -22,13 +25,18 @@ def checkout(request):
         amount=stripe_total,
         currency=settings.STRIPE_CURRENCY,
     )
-
+    
     order_form = OrderForm()
+
+    if not stripe_public_key:
+        messages.warning(request, 'Stripe public key is missing. \
+            Did you forget to set it in your environment?')
+            
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
-        'stripe_public_key': 'pk_test_51M9YFHJlmZdRcXoBZU5teG3m475ojbcUIoTPTDBvefiXgsR0ICuNe7OFx8x3TFOpnjXS1kMQER5BKtkCRVIGQAcV00yzX7y0Vf',
-        'client_secret': 'test client secret',
+        'stripe_public_key': stripe_public_key,
+        'client_secret': intent.client_secret,
     }
 
     return render(request, template, context)
