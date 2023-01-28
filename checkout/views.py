@@ -102,10 +102,10 @@ def checkout_success(request, order_number):
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
-    print(order.grand_total)
+    
     if 'bag' in request.session:
         del request.session['bag']
-    print(order)
+   
     template = 'checkout/checkout_success.html'
     context = {
         'order': order,
