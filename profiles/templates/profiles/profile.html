@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+    <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
 {% endblock %}
 
 {% block page_header %}
-    <div class="container header-containerallu">
+    <div class="container header-container">
         <div class="row">
             <div class="col"></div>
         </div>
@@ -14,11 +14,12 @@
 {% endblock %}
 
 {% block content %}
-    <div class=" container">
+    <div class="overlay"></div>
+    <div class="container">
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class=" logo-font mb-4">My Profile</h2>
+                <h2 class="logo-font mb-4">My Profile</h2>
                 <hr>
             </div>
         </div>
@@ -57,7 +58,9 @@
                                         <ul class="list-unstyled">
                                             {% for item in order.lineitems.all %}
                                                 <li class="small">
-                                                    {{ item.product.name }} x{{ item.quantity }}
+                                                    {% if item.product.has_sizes %}
+                                                        Size {{ item.product.size|upper }}
+                                                    {% endif %}{{ item.product.name }} x{{ item.quantity }}
                                                 </li>
                                             {% endfor %}
                                         </ul>
