@@ -45,4 +45,4 @@ class Review(models.Model):
     comment = models.TextField(max_length=400)
 
     def __str__(self):
-        return self.user
+        return self.products
