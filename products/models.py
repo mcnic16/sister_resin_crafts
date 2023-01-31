@@ -1,5 +1,6 @@
 from django.db import models
 from profiles.models import UserProfile
+from django.contrib.auth.models import User
 # Create your models here.
 
 
@@ -28,12 +29,21 @@ class Product(models.Model):
         return self.name
 
 
-class ReviewRating(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
-    subject = models.CharField(max_length=100, blank=True)
-    review = models.TextField(max_length=300, blank=True)
-    rating = models.FloatField()
+class Post(models.Model):
+    header = models.CharField(max_length=100, default="Header")
+    text = models.TextField()
 
     def __str__(self):
-        return self.subject
+        return f"{self.header}: {self.average_rating()}"
+
+
+class Rating(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    rating = models.IntegerField(default=0)
+
+    def __str__(self):
+        return f"{self.post.header}: {self.rating}"
+
+
+

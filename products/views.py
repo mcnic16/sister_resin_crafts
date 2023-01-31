@@ -3,8 +3,6 @@ from django.contrib import messages
 from django.db.models import Q
 from .models import Product, Category
 
-from .forms import ProductForm
-
 # Create your views here.
 
 
