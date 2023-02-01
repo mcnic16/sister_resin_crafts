@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=*38r&6l2@)vkb0vf=gx*l1(r(c36c&+r-)!!b($i_0yzwhto_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
 ALLOWED_HOSTS = ['sister-resin-craft.herokuapp.com', 'localhost']
