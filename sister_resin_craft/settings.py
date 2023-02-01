@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-=*38r&6l2@)vkb0vf=gx*l1(r(c36c&+r-)!!b($i_0yzwhto_
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['mcnic16-sister-resin-craft.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['sister-resin-craft.herokuapp.com', 'localhost']
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 # Application definition
@@ -123,20 +123,12 @@ LOGIN_REDIRECT_URL = '/'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-if 'DATABASE_URL' in os.environ:
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
-    }
-
-
-
+DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.sqlite3',
+         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+     }
+ }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
