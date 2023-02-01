@@ -32,17 +32,10 @@ class Product(models.Model):
 
 class Review(models.Model):
     review_date = models.DateTimeField(default=timezone.now)
-    rate_choices = (
-        (1,1),
-        (2,2),
-        (3,3),
-        (4,4),
-        (5,5)
-    )
     products = models.ForeignKey(Product, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    stars = models.IntegerField(choices=rate_choices)
+    stars = models.FloatField()
     comment = models.TextField(max_length=400)
 
     def __str__(self):
-        return self.products
+        return self.comment

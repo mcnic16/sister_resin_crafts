@@ -69,33 +69,3 @@ def add_product(request):
     }
 
     return render(request, template, context)
-
-
-def home(request):
-    items = Product.objects.all()
-    context = {
-        'items':items
-    }
-    return render(request('products/products.html', context))
-
-
-def rate(request, id):
-    post = Product.objects.get(id=id)
-    form = ReviewForm(request.POST or None)
-    if form.is_valid():
-        user = request.POST.get('user')
-        stars = request.POST.get('stars')
-        comment = request.POST.get('comment')
-        review = Review(user=user, stars=stars,  comment=comment , product=post)
-        review.save()
-        return render(request, template, context)
-
-    form = ReviewForm()
-    context = {
-        "form":form
-
-    }
-    return render(request, 'products/rate.html', context)
-
-    def success(request):
-        return render(request, "products/success.html")
